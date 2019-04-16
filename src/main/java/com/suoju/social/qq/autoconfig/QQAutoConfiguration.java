@@ -80,13 +80,12 @@ public class QQAutoConfiguration extends SocialConfigurerAdapter {
      */
     @Bean
     public SpringSocialConfigurer socialSecurityConfig() {
-        return new SpringSocialConfigurer();
+        return new QQSpringSocialConfigurer("/login");
     }
 
-    /*    @Bean
+/*    @Bean
     public SpringSocialConfigurer merryyouSocialSecurityConfig() {
-        String filterProcessesUrl = SecurityConstants.DEFAULT_SOCIAL_PROCESS_URL;
-        MerryyouSpringSocialConfigurer configurer = new MerryyouSpringSocialConfigurer(filterProcessesUrl);
+        MerryyouSpringSocialConfigurer configurer = new MerryyouSpringSocialConfigurer("/login");
         return configurer;
     }*/
 
